@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="28.125" viewBox="0 0 31.5 28.125">
+  <g id="sunset" transform="translate(-2.25 -4.506)">
+    <path id="Path_1016" data-name="Path 1016" d="M2.25,30.381h31.5v2.25H2.25Z" fill="#fbe7cc"/>
+    <path id="Path_1017" data-name="Path 1017" d="M18,22.506a4.506,4.506,0,0,1,4.5,4.5h2.25a6.75,6.75,0,1,0-13.5,0H13.5a4.506,4.506,0,0,1,4.5-4.5Z" fill="#fbe7cc"/>
+    <path id="Path_1018" data-name="Path 1018" d="M28.125,24.756H33.75v2.25H28.125Z" fill="#fbe7cc"/>
+    <path id="Path_1019" data-name="Path 1019" d="M24.4,19.017l3.944-3.944,1.591,1.592-3.944,3.943Z" fill="#fbe7cc"/>
+    <path id="Path_1020" data-name="Path 1020" d="M22.039,10.794l-2.914,2.9V4.506h-2.25V13.7l-2.914-2.9-1.586,1.586L18,18.006l5.625-5.625L22.039,10.8Z" fill="#fbe7cc"/>
+    <path id="Path_1021" data-name="Path 1021" d="M6.067,16.663l1.592-1.591L11.6,19.015l-1.592,1.592Z" fill="#fbe7cc"/>
+    <path id="Path_1022" data-name="Path 1022" d="M2.25,24.756H7.875v2.25H2.25Z" fill="#fbe7cc"/>
+  </g>
+</svg>

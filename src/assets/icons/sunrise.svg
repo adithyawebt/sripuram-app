@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="28.125" viewBox="0 0 31.5 28.125">
+  <g id="sunrise" transform="translate(-2.25 -4.5)">
+    <path id="Path_1009" data-name="Path 1009" d="M2.25,30.375h31.5v2.25H2.25Z" fill="#fbe7cc"/>
+    <path id="Path_1010" data-name="Path 1010" d="M18,22.5A4.506,4.506,0,0,1,22.5,27h2.25a6.75,6.75,0,1,0-13.5,0H13.5A4.506,4.506,0,0,1,18,22.5Z" fill="#fbe7cc"/>
+    <path id="Path_1011" data-name="Path 1011" d="M28.125,24.75H33.75V27H28.125Z" fill="#fbe7cc"/>
+    <path id="Path_1012" data-name="Path 1012" d="M24.4,19.012l3.944-3.945,1.591,1.592L25.989,20.6Z" fill="#fbe7cc"/>
+    <path id="Path_1013" data-name="Path 1013" d="M18,4.5l-5.625,5.625,1.586,1.586,2.914-2.9v8.066h2.25V8.809l2.914,2.9,1.586-1.586Z" fill="#fbe7cc"/>
+    <path id="Path_1014" data-name="Path 1014" d="M6.067,16.658l1.592-1.591L11.6,19.011,10.011,20.6Z" fill="#fbe7cc"/>
+    <path id="Path_1015" data-name="Path 1015" d="M2.25,24.75H7.875V27H2.25Z" fill="#fbe7cc"/>
+  </g>
+</svg>
