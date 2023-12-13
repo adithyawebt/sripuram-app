@@ -1,0 +1,18 @@
+
+{
+    "slides": [
+      {
+        "image": "url1.jpg",
+        "text": "Text 1"
+      },
+      {
+        "image": "url2.jpg",
+        "text": "Text 2"
+      },
+      {
+        "image": "url3.jpg",
+        "text": "Text 3"
+      }
+    ]
+  }
+  

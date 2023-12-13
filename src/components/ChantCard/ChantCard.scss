@@ -2,7 +2,7 @@
     background-color: #FBE7CC;
     max-width: 375px;
     height: 220px;
-    margin: 55px 10px;
+    margin: 55px 15px;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -11,14 +11,38 @@
     z-index: 2;
 }
 
-.chantHeader {
+.chantText {
     width: 187.5px;
+    margin: 0 12px 0 12px;
 }
 
+.chantHeader {
+    padding: 0;
+}
+
+.chantTitle {
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+.chantSubtitle {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 16px;
+}
 .chantImage {
     position: relative;
     height: 187.5px;
     width: 187.5px;
+    margin-top: 30px;
     bottom: 0;
 }
 
+.chantButton {
+    width: 160px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #922616;
+    border-radius: 16px;
+    margin: 20px 0;
+}

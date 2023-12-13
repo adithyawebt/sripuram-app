@@ -5,11 +5,14 @@ import './ChantCard.scss';
 export const ChantCard = () => {
   return (
     <IonCard className='chantCard'>
-        <IonThumbnail className='chantImage'><img src={ChantImage} alt="" /></IonThumbnail>
+      <IonThumbnail className='chantImage'><img src={ChantImage} alt="" /></IonThumbnail>
+      <div className='chantText'>
         <IonCardHeader className='chantHeader'>
-        <IonCardTitle>Today's Chant</IonCardTitle>
-        <IonCardSubtitle>A daily chant for focused mindfullness and positive intention.</IonCardSubtitle>
+          <IonCardTitle className='chantTitle'>Today's Chant</IonCardTitle>
+          <IonCardSubtitle className='chantSubtitle'>A daily chant for focused mindfullness and positive intention.</IonCardSubtitle>
+          <button className='chantButton'></button>
         </IonCardHeader>
+      </div>
     </IonCard>
   )
 }

@@ -4,9 +4,9 @@
     height: 80px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 30px 10px 10px 10px;
+    margin: 60px 15px 30px 15px;
     z-index: 2;
 }
 
@@ -17,14 +17,13 @@
 }
 
 .iconContainer {
-    // position: relative;
+    position: relative;
     background-color: #FBF5E4;
-    height: 30px;
-    width: 30px;
-    border-radius: 25px;
-    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 10px 0 0;
+    margin: 0 10px 0 120px;
 }
