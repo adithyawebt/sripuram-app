@@ -1,0 +1,103 @@
+.ion-content {
+    position: relative;
+}
+
+.topUnderlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    background: #571207 url('../assets/icons/pattern.svg') center/cover;
+}
+
+.bottomUnderlay {
+    position: absolute;
+    top: 320px;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    bottom: 0;
+    background-color: #FBF5E4;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    z-index: 1;
+}
+
+.chantHeader {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+    .chantHeaderGreeting {
+        font-size: 22px;
+        color: #FBF5E4;
+    }
+
+    .chantBackIcon {
+        background-color: #FBF5E4;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+    }
+
+    .chantHeaderIcon {
+        background-color: #FBF5E4;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 25px;
+    }
+}
+
+.chantTimeCards {
+    z-index: 2;
+    width: 300px;
+    height: 70px;
+    top: 355px;
+    margin-left: 60px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+
+    .chantTimeIcon {
+        width: 35px;
+        height: 35px;
+        margin-left: 15px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .chantTimeTextContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chantCompletion {
+        height: 20px;
+        width: 20px;
+        margin-right: 20px;
+    }
+
+}

@@ -1,10 +1,11 @@
 import { IonContent, IonPage } from '@ionic/react';
-import './Home.scss';
+import styles from './Home.module.scss';
 import { Header } from '../components/Header/Header';
 import { ChantCard } from '../components/ChantCard/ChantCard'
 import { ExploreCard } from '../components/ExploreCard/ExploreCard';
 import { NavSlider } from '../components/NavSlider/NavSlider';
 import data from '../components/NavSlider/NavSliderData.json'
+import { TrendingSliderContainer } from '../components/TrendingSlider/TrendingSliderContainer'
 
 const Home: React.FC = () => {
   return (
@@ -13,9 +14,10 @@ const Home: React.FC = () => {
         <Header />
         {/* <NavSlider data={ data.slides } /> */}
         <ChantCard />
+        <TrendingSliderContainer />
         <ExploreCard />
-        <div className="top-underlay"></div>
-        <div className="bottom-underlay"></div>
+        <div className={styles.topUnderlay}></div>
+        <div className={styles.bottomUnderlay}></div>
       </IonContent>
     </IonPage>
   );
