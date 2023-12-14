@@ -1,6 +1,6 @@
 import React from 'react';
 import { IonSlides, IonSlide, IonText, IonContent, IonPage } from '@ionic/react';
-import './NavSlider.scss';
+import styles from './NavSlider.module.scss';
 
 interface SlideData {
   image: string;
@@ -22,12 +22,12 @@ export const NavSlider: React.FC<NavSliderProps> = ({ data }) => {
   return (
     <IonPage>
       <IonContent>
-        <IonSlides options={sliderOptions} className="NavSlider">
+        <IonSlides options={sliderOptions} className={styles.navSlider}>
           {data.map((item, index) => (
-            <IonSlide key={index} className="NavSlide">
-              <div className="NavSlideContent">
-                <img src={item.image} alt={`Nav Slide ${index + 1}`} className="NavSlideImage" />
-                <IonText className="NavSlideText">{item.text}</IonText>
+            <IonSlide key={index} className={styles.navSlide}>
+              <div className={styles.navSlideContent}>
+                <img src={item.image} alt={`Nav Slide ${index + 1}`} className={styles.navSlideImage} />
+                <IonText className={styles.navSlideText}>{item.text}</IonText>
               </div>
             </IonSlide>
           ))}

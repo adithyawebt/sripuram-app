@@ -1,0 +1,67 @@
+.exploreHeader{
+    padding: 0;
+    margin: 0;
+}
+
+.exploreCard {
+    background-color: #571207;
+    max-width: 375px;
+    height: 220px;
+    margin: 55px 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.exploreText {
+    margin: 0px 0px 0px 25px;
+}
+
+.exploreTitle {
+    color: #FBF5E4;
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+.exploreSubtitle {
+    color: #FBF5E4;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 150px;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.exploreButton {
+    background-color: #FBF5E4;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .explorePlayicon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .explorePlayText {
+        color: #6E1A0D;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+}
+
+.exploreImage {
+    position: absolute;
+    height: 114px;
+    width: 166px;
+    right: 0;
+}

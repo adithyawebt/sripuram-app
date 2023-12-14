@@ -1,5 +1,4 @@
-// NavSlider.scss
-.NavSlider {
+.navSlider {
     width: calc(100% - 15px);
     margin-left: 15px;
     margin-bottom: 50px;
@@ -8,24 +7,24 @@
       border-radius: 15px;
     }
   
-    .NavSlide {
+    .navSlide {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
   
-    .NavSlideContent {
+    .navSlideContent {
       text-align: center;
       margin-top: 10px;
   
-      .NavSlideImage {
+      .navSlideImage {
         border-radius: 50%;
         width: 90px;
         height: 90px;
       }
   
-      .NavSlideText {
+      .navSlideText {
         font-size: 14px;
         color: #FBF5E4;
         margin-top: 10px;

@@ -45,4 +45,22 @@
     border: 1px solid #922616;
     border-radius: 16px;
     margin: 20px 0;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .chantPlayicon {
+        width: 10px;
+        height: 11px;
+        margin-left: 5px;
+    }
+
+    .chantPlayText {
+        color: #6E1A0D;
+        font-size: 12px;
+        margin-right: 5px;
+    }
 }
+
