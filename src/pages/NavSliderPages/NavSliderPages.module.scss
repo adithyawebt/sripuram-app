@@ -1,3 +1,5 @@
+@import '../../assets/fonts/charter/webfonts/stylesheet.css';
+
 .ion-content {
     position: relative;
 }
@@ -44,7 +46,9 @@
     z-index: 2;
     margin: 0 auto;
     text-align: center;
+    font-family: 'charterbold', 'Times New Roman', sans-serif;
     font-size: 26px;
+    color: #5D422C;
 }
 
 .navPageText {
@@ -52,8 +56,10 @@
     top: 520px;
     z-index: 2;
     margin: auto 40px;
+    font-size: 16px;
     text-align: center;
     line-height: 30px;
+    color: #922616;
 }
 
 .templeBG {

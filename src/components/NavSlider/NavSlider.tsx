@@ -13,6 +13,11 @@ export const NavSlider = () => {
     const history = useHistory();
     const navSliderData = [
         {
+            image: TempleImage,
+            title: 'Temple',
+            path: '/temple',
+        },
+        {
             image: BhajanImage,
             title: 'Bhajan',
             path: '/bhajan',
@@ -21,11 +26,6 @@ export const NavSlider = () => {
             image: MeditationImage,
             title: 'Meditation',
             path: '/meditation',
-        },
-        {
-            image: TempleImage,
-            title: 'Temple',
-            path: '/temple',
         },
         {
             image: MantraImage,

@@ -15,17 +15,17 @@ export const TrendingSliderContainer = () => {
         {
             subtitle: 'Lorem ipsum dolor sit',
             image: TrendingImage1,
-            path: '/home'
+            path: '/trending'
         },
         {
             subtitle: 'amet consectetur adipisicing elit',
             image: TrendingImage2,
-            path: '/home'
+            path: '/trending'
         },
         {
             subtitle: 'Ipsam deleniti magnam enim',
             image: TrendingImage3,
-            path: '/home'
+            path: '/trending'
         }
     ]
 
