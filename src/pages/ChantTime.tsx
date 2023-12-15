@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom';
 import { IonCard, IonContent, IonIcon, IonPage, IonThumbnail } from '@ionic/react'
 import styles from './ChantTime.module.scss'
 import BellIcon from '../assets/icons/bell.svg'
@@ -12,6 +13,7 @@ import PauseIcon from '../assets/icons/play-pause.svg'
 
 export const ChantTime = () => {
     const icons = [PlayIcon, PauseIcon, CheckIcon];
+    const history = useHistory();
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleCompletionIconClick = () => {
@@ -19,14 +21,18 @@ export const ChantTime = () => {
         setCurrentIndex(newIndex);
     };
 
+    const handleBackIconClick = () => {
+        history.push('/home');
+    };
+
     return (
         <IonPage>
             <IonContent fullscreen>
-                <div className={styles.chantHeader}>
-                    <div className={styles.chantBackIcon}>
+                <div className={styles.chantTimeHeader}>
+                    <div className={styles.chantBackIcon} onClick={handleBackIconClick}>
                         <IonIcon icon={BackIcon}></IonIcon>
                     </div>
-                    <span className={styles.chantHeaderGreeting}>Chant Time</span>
+                    <span className={styles.chantTimeHeaderGreeting}>Chant Time</span>
                     <div className={styles.chantHeaderIcon}>
                         <IonIcon icon={BellIcon}></IonIcon>
                     </div>

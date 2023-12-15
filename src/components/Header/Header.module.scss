@@ -1,3 +1,5 @@
+@import '../../assets/fonts/charter/webfonts/stylesheet.css';
+
 .headerContainer {
     position: relative;
     width: 100vw;
@@ -12,7 +14,7 @@
 
 .greeting {
     font-size: 22px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'charterbold','Times New Roman', Times, serif;
     color: #FBF5E4;
 }
 

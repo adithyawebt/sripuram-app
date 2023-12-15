@@ -3,6 +3,11 @@ import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 import { ChantTime } from './pages/ChantTime';
+import { Bhajan } from './pages/NavSliderPages/Bhajan';
+import { Mantra } from './pages/NavSliderPages/Mantra';
+import { Meditation } from './pages/NavSliderPages/Meditation';
+import { Quotes } from './pages/NavSliderPages/Quotes';
+import { Temple } from './pages/NavSliderPages/Temple';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -26,6 +31,7 @@ import './theme/variables.css';
 setupIonicReact();
 
 const App: React.FC = () => (
+
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
@@ -34,6 +40,21 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/chant">
           <ChantTime />
+        </Route>
+        <Route exact path="/temple">
+          <Temple />
+        </Route>
+        <Route exact path="/quotes">
+          <Quotes />
+        </Route>
+        <Route exact path="/meditation">
+          <Meditation />
+        </Route>
+        <Route exact path="/mantra">
+          <Mantra />
+        </Route>
+        <Route exact path="/bhajan">
+          <Bhajan />
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />

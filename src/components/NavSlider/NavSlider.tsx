@@ -1,38 +1,65 @@
-import React from 'react';
-import { IonSlides, IonSlide, IonText, IonContent, IonPage } from '@ionic/react';
-import styles from './NavSlider.module.scss';
+import { useHistory } from 'react-router-dom';
+import styles from './NavSlider.module.scss'
 
-interface SlideData {
-  image: string;
-  text: string;
+import BhajanImage from '../../assets/images/bhajan.jpg';
+import MeditationImage from '../../assets/images/meditation.jpg';
+import TempleImage from '../../assets/images/temple-main.jpg';
+import MantraImage from '../../assets/images/mantra.jpg'
+import QuotesImage from '../../assets/images/quotes.jpg'
+import { IonThumbnail } from '@ionic/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+export const NavSlider = () => {
+    const history = useHistory();
+    const navSliderData = [
+        {
+            image: BhajanImage,
+            title: 'Bhajan',
+            path: '/bhajan',
+        },
+        {
+            image: MeditationImage,
+            title: 'Meditation',
+            path: '/meditation',
+        },
+        {
+            image: TempleImage,
+            title: 'Temple',
+            path: '/temple',
+        },
+        {
+            image: MantraImage,
+            title: 'Mantra',
+            path: '/mantra',
+        },
+        {
+            image: QuotesImage,
+            title: 'Quotes',
+            path: '/quotes',
+        },
+    ]
+
+    const handleSlideClick = (path: string) => {
+        history.push(path);
+    };
+
+    return (
+        <div className={styles.navSliderContainer}>
+            <Swiper
+                spaceBetween={20}
+                slidesPerView={3.5}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+            >
+                {navSliderData.map((data) => {
+                    return <SwiperSlide onClick={() => handleSlideClick(data.path)}>
+                    <div className={styles.navSlidePiece}>
+                        <IonThumbnail className={styles.navSlidePieceImage}><img src={data.image} alt=" nav slider image" /></IonThumbnail>
+                        <div className={styles.navSlidePieceTitle}>{data.title}</div>
+                    </div>
+                </SwiperSlide>
+                })}
+            </Swiper>
+        </div>
+    )
 }
-
-interface NavSliderProps {
-  data: SlideData[];
-}
-
-export const NavSlider: React.FC<NavSliderProps> = ({ data }) => {
-  const sliderOptions = {
-    initialSlide: 0,
-    slidesPerView: 1,
-    spaceBetween: 10,
-    speed: 400,
-  };
-
-  return (
-    <IonPage>
-      <IonContent>
-        <IonSlides options={sliderOptions} className={styles.navSlider}>
-          {data.map((item, index) => (
-            <IonSlide key={index} className={styles.navSlide}>
-              <div className={styles.navSlideContent}>
-                <img src={item.image} alt={`Nav Slide ${index + 1}`} className={styles.navSlideImage} />
-                <IonText className={styles.navSlideText}>{item.text}</IonText>
-              </div>
-            </IonSlide>
-          ))}
-        </IonSlides>
-      </IonContent>
-    </IonPage>
-  );
-};

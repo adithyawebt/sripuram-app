@@ -4,7 +4,6 @@ import { Header } from '../components/Header/Header';
 import { ChantCard } from '../components/ChantCard/ChantCard'
 import { ExploreCard } from '../components/ExploreCard/ExploreCard';
 import { NavSlider } from '../components/NavSlider/NavSlider';
-import data from '../components/NavSlider/NavSliderData.json'
 import { TrendingSliderContainer } from '../components/TrendingSlider/TrendingSliderContainer'
 
 const Home: React.FC = () => {
@@ -12,7 +11,7 @@ const Home: React.FC = () => {
     <IonPage>
       <IonContent fullscreen>
         <Header />
-        {/* <NavSlider data={ data.slides } /> */}
+        <NavSlider />
         <ChantCard />
         <TrendingSliderContainer />
         <ExploreCard />
