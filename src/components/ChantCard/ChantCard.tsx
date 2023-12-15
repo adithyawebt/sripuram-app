@@ -6,7 +6,7 @@ import ChantImage from '../../assets/icons/Namaste.svg';
 import ChantPlayIcon from '../../assets/icons/play-outlined-alt.svg';
 
 export const ChantCard = () => {
-  const history = useHistory() ;
+  const history = useHistory();
 
   const handleChantClick = () => {
     history.push('/chant');
@@ -16,14 +16,12 @@ export const ChantCard = () => {
     <IonCard className={styles.chantCard}>
       <IonThumbnail className={styles.chantImage}><img src={ChantImage} alt="" /></IonThumbnail>
       <div className={styles.chantText}>
-        <IonCardHeader className={styles.chantHeader}>
-          <IonCardTitle className={styles.chantTitle}>Today's Chant</IonCardTitle>
-          <IonCardSubtitle className={styles.chantSubtitle}>A daily chant for focused mindfullness and positive intention.</IonCardSubtitle>
-          <button className={styles.chantButton} onClick={handleChantClick}>
+        <span className={styles.chantTitle}>Today's Chant</span>
+        <span className={styles.chantSubtitle}>A daily chant for focused mindfullness and positive intention.</span>
+        <button className={styles.chantButton} onClick={handleChantClick}>
           <IonThumbnail className={styles.chantPlayicon}><img src={ChantPlayIcon} alt="play button" /></IonThumbnail>
-            <span className={styles.chantPlayText}>Start Today's Chant</span>
-          </button>
-        </IonCardHeader>
+          <span className={styles.chantPlayText}>Start Today's Chant</span>
+        </button>
       </div>
     </IonCard>
   )

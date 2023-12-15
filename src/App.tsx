@@ -8,6 +8,7 @@ import { Mantra } from './pages/NavSliderPages/Mantra';
 import { Meditation } from './pages/NavSliderPages/Meditation';
 import { Quotes } from './pages/NavSliderPages/Quotes';
 import { Temple } from './pages/NavSliderPages/Temple';
+import { TrendingPlaceHolder } from './pages/TrendingPages/TrendingPlaceHolder';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -55,6 +56,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/bhajan">
           <Bhajan />
+        </Route>
+        <Route exact path="/trending">
+          <TrendingPlaceHolder />
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />

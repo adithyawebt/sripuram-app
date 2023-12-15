@@ -1,7 +1,4 @@
-.exploreHeader{
-    padding: 0;
-    margin: 0;
-}
+@import '../../assets//fonts/charter/webfonts/stylesheet.css';
 
 .exploreCard {
     background-color: #571207;
@@ -18,9 +15,13 @@
 
 .exploreText {
     margin: 0px 0px 0px 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .exploreTitle {
+    font-family: 'charterbold', 'Times New Roman', sans-serif;
     color: #FBF5E4;
     font-size: 23px;
     margin-top: 20px;
@@ -29,17 +30,18 @@
 .exploreSubtitle {
     color: #FBF5E4;
     font-size: 14px;
+    font-weight: 400;
     line-height: 22px;
     margin-right: 150px;
     text-align: left;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
 .exploreButton {
-    background-color: #FBF5E4;
     width: 100px;
     height: 30px;
+    background-color: #FBF5E4;
     border-radius: 15px;
     margin-bottom: 25px;
     display: flex;
@@ -54,6 +56,7 @@
     }
 
     .explorePlayText {
+        font-family: 'charterbold', 'Times New Roman', sans-serif;
         color: #6E1A0D;
         font-size: 12px;
         margin-right: 10px;

@@ -7,14 +7,12 @@ export const ExploreCard = () => {
   return (
     <IonCard className={styles.exploreCard}>
       <div className={styles.exploreText}>
-        <IonCardHeader className={styles.exploreHeader}>
-          <IonCardTitle className={styles.exploreTitle}>Explore Temple</IonCardTitle>
-          <IonCardSubtitle className={styles.exploreSubtitle}>Discover The Essence of a Journey of Spiritual Awakening.</IonCardSubtitle>
+          <span className={styles.exploreTitle}>Explore Temple</span>
+          <span className={styles.exploreSubtitle}>Discover The Essence of a Journey of Spiritual Awakening.</span>
           <button className={styles.exploreButton}>
             <IonThumbnail className={styles.explorePlayicon}><img src={ExplorePlayIcon} alt="play button" /></IonThumbnail>
             <span className={styles.explorePlayText}>Watch live</span>
           </button>
-        </IonCardHeader>
       </div>
       <IonThumbnail className={styles.exploreImage}><img src={ExploreImage} alt="temple image" /></IonThumbnail>
     </IonCard>

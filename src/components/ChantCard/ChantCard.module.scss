@@ -1,3 +1,5 @@
+@import '../../assets//fonts/charter/webfonts/stylesheet.css';
+
 .chantCard {
     background-color: #FBE7CC;
     max-width: 375px;
@@ -14,24 +16,25 @@
 .chantText {
     width: 187.5px;
     margin: 0 12px 0 12px;
-}
-
-.chantHeader {
-    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .chantTitle {
+    font-family: 'charterbold', 'Times New Roman', sans-serif;
+    color: #5D422C;
     font-size: 23px;
     margin-top: 20px;
-    color: #5D422C;
 }
 
 .chantSubtitle {
+    color: #5D422C;
     font-size: 14px;
     font-weight: 400;
+    line-height: 22px;
     text-align: left;
-    margin-top: 16px;
-    color: #5D422C;
+    margin-top: 20px;
 }
 
 .chantImage {
@@ -48,7 +51,7 @@
     background-color: transparent;
     border: 1px solid #922616;
     border-radius: 16px;
-    margin: 20px 0;
+    margin: 30px 0;
     padding: 0 10px;
     display: flex;
     flex-direction: row;
@@ -67,6 +70,7 @@
     }
 
     .chantPlayText {
+        font-family: 'charterbold', 'Times New Roman', sans-serif;
         color: #6E1A0D;
         font-size: 12px;
         margin-right: 5px;
