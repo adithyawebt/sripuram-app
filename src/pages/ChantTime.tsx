@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom';
 import { IonCard, IonContent, IonIcon, IonPage, IonThumbnail } from '@ionic/react'
+import { ChantTimerProgress } from '../components/ChantTimerProgress/ChantTimerProgress';
+
 import styles from './ChantTime.module.scss'
+
 import BellIcon from '../assets/icons/bell.svg'
 import BackIcon from '../assets/icons/arrow-back-outline.svg'
 import SunDownIcon from '../assets/icons/sunrise-1.svg'
@@ -10,6 +13,7 @@ import SunNoonIcon from '../assets/icons/sun.svg'
 import CheckIcon from '../assets/icons/check-circle-fill.svg'
 import PlayIcon from '../assets/icons/play-outlined-alt.svg'
 import PauseIcon from '../assets/icons/play-pause.svg'
+import SunSetIcon from '../assets/icons/sunset.svg'
 
 export const ChantTime = () => {
     const icons = [PlayIcon, PauseIcon, CheckIcon];
@@ -35,6 +39,31 @@ export const ChantTime = () => {
                     <span className={styles.chantTimeHeaderGreeting}>Chant Time</span>
                     <div className={styles.chantHeaderIcon}>
                         <IonIcon icon={BellIcon}></IonIcon>
+                    </div>
+                </div>
+                <ChantTimerProgress />
+                <div className={styles.sunTiming}>
+                    <div className={styles.sunTime}>
+                        <div className={styles.sunTimeIconHolder}>
+                            <IonThumbnail>
+                                <img src={SunRiseIcon} alt="" />
+                            </IonThumbnail>
+                        </div>
+                        <div className={styles.sunTimeTextHolder}>
+                            <span className={styles.sunTimeText}>Start By</span>
+                            <span className={styles.sunTimeTime}>6:00 AM</span>
+                        </div>
+                    </div>
+                    <div className={styles.sunTime}>
+                        <div className={styles.sunTimeTextHolder}>
+                            <span className={styles.sunTimeText}>End By</span>
+                            <span className={styles.sunTimeTime}>6:30 PM</span>
+                        </div>
+                        <div className={styles.sunTimeIconHolder}>
+                            <IonThumbnail>
+                                <img src={SunSetIcon} alt="" />
+                            </IonThumbnail>
+                        </div>
                     </div>
                 </div>
                 <IonCard className={styles.chantTimeCards}>

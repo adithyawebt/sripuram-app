@@ -1,0 +1,49 @@
+@import '../../assets/fonts/charter/webfonts/stylesheet.css';
+
+.progressContainer {
+    position: absolute;
+    z-index: 2;
+}
+
+.progressTimerWrapper {
+    position: absolute;
+    top: 155px;
+    width: 100vw;
+    overflow: hidden;
+
+    .progressTimer {
+        position: relative;
+        width: 250px;
+        height: 125px;
+        border-radius: 275px 275px 15px 15px;
+        margin: 0 auto;
+        background: #FBF5E4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #5D422C;
+        padding: 32px 0px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -20px; /* Adjust this value for the desired dimple depth */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px; /* Adjust this value for the desired dimple width */
+            height: 20px; /* Adjust this value for the desired dimple height */
+            background: #FBF5E4; /* Same background color as .progressTimer */
+            border-radius: 50%;
+        }
+        
+        .progressChantName {
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .progressChantTime {
+            font-family: 'charterbold', 'Times New Roman', sans-serif;
+            font-size: 37px;
+        }
+    }
+}
