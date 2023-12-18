@@ -1,5 +1,5 @@
 .trendingSliderContainer {
-    margin: 50px 0;
+    margin: 35px 0;
     position: relative;
     z-index: 2;
 
@@ -24,19 +24,46 @@
     }
 
     .trendingSlider {
-        margin-left: 15px;
+        // margin: 0 15px;
+        overflow-x: auto;
+        display: flex;
+        flex-direction: row;
+        // scroll-snap-type: x mandatory;
+
+        &::-webkit-scrollbar {
+            width: 0.5rem; // Adjust the width as needed
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: transparent; // Make the thumb transparent
+        }
+
+        &::-moz-scrollbar {
+            width: 0.5rem;
+        }
+
+        &::-moz-scrollbar-thumb {
+            background-color: transparent;
+        }
+
+        scrollbar-width: thin;
+        /* For Firefox Quantum */
+        scrollbar-color: transparent transparent;
+        /* For Firefox Quantum */
+
 
         .trendingSwipeCard {
             width: 190px;
             height: 210px;
             border-radius: 20px;
             padding: 0;
-            margin: 0;
+            margin: 0 0 0 15px;
             background: linear-gradient(to bottom, #E2C186, #716143);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            scroll-snap-align: start;
 
             .trendingCardBadge {
                 position: absolute;
@@ -66,6 +93,6 @@
                 text-align: center;
             }
         }
-        
+
     }
 }
