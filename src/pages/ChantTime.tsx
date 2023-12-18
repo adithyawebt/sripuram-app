@@ -26,7 +26,7 @@ export const ChantTime = () => {
     };
 
     const handleBackIconClick = () => {
-        history.push('/home');
+        history.push('/');
     };
 
     return (

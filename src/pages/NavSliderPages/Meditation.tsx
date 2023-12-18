@@ -7,7 +7,7 @@ export const Meditation = () => {
     const history = useHistory();
 
     const handleBackIconClick = () => {
-        history.push('/home');
+        history.push('/');
     };
 
     return (
