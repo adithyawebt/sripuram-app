@@ -1,10 +1,16 @@
 @import '../../assets//fonts/charter/webfonts/stylesheet.css';
 
+.exploreCardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0;
+}
+
 .exploreCard {
     background-color: #571207;
     max-width: 375px;
     height: 220px;
-    margin: 55px 20px;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
