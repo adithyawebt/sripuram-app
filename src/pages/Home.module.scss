@@ -1,26 +1,25 @@
 .ion-content {
-    position: relative;
-  }
-  
-  .topUnderlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 450px;
-    background: #571207 url('../assets/icons/pattern.svg') center/cover;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    z-index: 1;
-  }
-  
-  .bottomUnderlay {
-    position: absolute;
-    top: 430px;
-    left: 0;
-    width: 100%;
-    height: 780px;
-    bottom: 0;
-    background-color: #FBF5E4;
-  }
-  
+  position: relative;
+}
+
+.topUnderlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 450px;
+  background: #571207 url('../assets/icons/pattern.svg') center/cover;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 1;
+}
+
+.bottomUnderlay {
+  position: absolute;
+  top: 430px;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  bottom: 0;
+  background-color: #FBF5E4;
+}
