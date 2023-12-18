@@ -1,4 +1,5 @@
 import { useHistory } from 'react-router-dom';
+
 import styles from './NavSlider.module.scss'
 
 import BhajanImage from '../../assets/images/bhajan.jpg';
@@ -45,21 +46,12 @@ export const NavSlider = () => {
 
     return (
         <div className={styles.navSliderContainer}>
-            <Swiper
-                spaceBetween={20}
-                slidesPerView={3.5}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
-            >
-                {navSliderData.map((data) => {
-                    return <SwiperSlide onClick={() => handleSlideClick(data.path)}>
-                    <div className={styles.navSlidePiece}>
-                        <IonThumbnail className={styles.navSlidePieceImage}><img src={data.image} alt=" nav slider image" /></IonThumbnail>
-                        <div className={styles.navSlidePieceTitle}>{data.title}</div>
-                    </div>
-                </SwiperSlide>
-                })}
-            </Swiper>
+            {navSliderData.map((data) => {
+                return <div className={styles.navSlidePiece} onClick={() => handleSlideClick(data.path)}>
+                    <IonThumbnail className={styles.navSlidePieceImage}><img src={data.image} alt=" nav slider image" /></IonThumbnail>
+                    <div className={styles.navSlidePieceTitle}>{data.title}</div>
+                </div>
+            })}
         </div>
     )
 }
