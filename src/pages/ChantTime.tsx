@@ -66,46 +66,48 @@ export const ChantTime = () => {
                         </div>
                     </div>
                 </div>
-                <IonCard className={styles.chantTimeCards}>
-                    <IonThumbnail className={styles.chantTimeIcon}><img src={SunDownIcon} alt="" /></IonThumbnail>
-                    <div className={styles.chantTimeTextContainer}>
-                        <span className={styles.chantTimeName}>Manonmani Devi</span>
-                        <span className={styles.chantTimeDuration}>6:00 AM - 6:30 AM</span>
-                    </div>
-                    <IonThumbnail className={styles.chantCompletion} onClick={handleCompletionIconClick}><img src={icons[currentIndex]} alt="play/pause/complete" /></IonThumbnail>
-                </IonCard>
-                <IonCard className={styles.chantTimeCards}>
-                    <IonThumbnail className={styles.chantTimeIcon}><img src={SunDownIcon} alt="" /></IonThumbnail>
-                    <div className={styles.chantTimeTextContainer}>
-                        <span className={styles.chantTimeName}>Ganesha Mantra</span>
-                        <span className={styles.chantTimeDuration}>10 AM - 10:30 AM</span>
-                    </div>
-                    <IonThumbnail className={styles.chantCompletion} onClick={handleCompletionIconClick}><img src={icons[currentIndex]} alt="play/pause/complete" /></IonThumbnail>
-                </IonCard>
-                <IonCard className={styles.chantTimeCards}>
-                    <IonThumbnail className={styles.chantTimeIcon}><img src={SunNoonIcon} alt="" /></IonThumbnail>
-                    <div className={styles.chantTimeTextContainer}>
-                        <span className={styles.chantTimeName}>Lakshmi Mantra</span>
-                        <span className={styles.chantTimeDuration}>12:00 PM - 12:30 PM</span>
-                    </div>
-                    <IonThumbnail className={styles.chantCompletion} onClick={handleCompletionIconClick}><img src={icons[currentIndex]} alt="play/pause/complete" /></IonThumbnail>
-                </IonCard>
-                <IonCard className={styles.chantTimeCards}>
-                    <IonThumbnail className={styles.chantTimeIcon}><img src={SunNoonIcon} alt="" /></IonThumbnail>
-                    <div className={styles.chantTimeTextContainer}>
-                        <span className={styles.chantTimeName}>Shiva Chant</span>
-                        <span className={styles.chantTimeDuration}>3:00 PM - 3:30 PM</span>
-                    </div>
-                    <IonThumbnail className={styles.chantCompletion} onClick={handleCompletionIconClick}><img src={icons[currentIndex]} alt="play/pause/complete" /></IonThumbnail>
-                </IonCard>
-                <IonCard className={styles.chantTimeCards}>
-                    <IonThumbnail className={styles.chantTimeIcon}><img src={SunDownIcon} alt="" /></IonThumbnail>
-                    <div className={styles.chantTimeTextContainer}>
-                        <span className={styles.chantTimeName}>Krishna Kirtan</span>
-                        <span className={styles.chantTimeDuration}>6:00 PM - 6:30 PM</span>
-                    </div>
-                    <IonThumbnail className={styles.chantCompletion} onClick={handleCompletionIconClick}><img src={icons[currentIndex]} alt="play/pause/complete" /></IonThumbnail>
-                </IonCard>
+                <div className={styles.chantTimeCardsContainer}>
+                    <IonCard className={styles.chantTimeCards}>
+                        <IonThumbnail className={styles.chantTimeIcon}><img src={SunDownIcon} alt="" /></IonThumbnail>
+                        <div className={styles.chantTimeTextContainer}>
+                            <span className={styles.chantTimeName}>Manonmani Devi</span>
+                            <span className={styles.chantTimeDuration}>6:00 AM - 6:30 AM</span>
+                        </div>
+                        <IonThumbnail className={styles.chantCompletion} onClick={handleCompletionIconClick}><img src={icons[currentIndex]} alt="play/pause/complete" /></IonThumbnail>
+                    </IonCard>
+                    <IonCard className={styles.chantTimeCards}>
+                        <IonThumbnail className={styles.chantTimeIcon}><img src={SunDownIcon} alt="" /></IonThumbnail>
+                        <div className={styles.chantTimeTextContainer}>
+                            <span className={styles.chantTimeName}>Ganesha Mantra</span>
+                            <span className={styles.chantTimeDuration}>10 AM - 10:30 AM</span>
+                        </div>
+                        <IonThumbnail className={styles.chantCompletion} onClick={handleCompletionIconClick}><img src={icons[currentIndex]} alt="play/pause/complete" /></IonThumbnail>
+                    </IonCard>
+                    <IonCard className={styles.chantTimeCards}>
+                        <IonThumbnail className={styles.chantTimeIcon}><img src={SunNoonIcon} alt="" /></IonThumbnail>
+                        <div className={styles.chantTimeTextContainer}>
+                            <span className={styles.chantTimeName}>Lakshmi Mantra</span>
+                            <span className={styles.chantTimeDuration}>12:00 PM - 12:30 PM</span>
+                        </div>
+                        <IonThumbnail className={styles.chantCompletion} onClick={handleCompletionIconClick}><img src={icons[currentIndex]} alt="play/pause/complete" /></IonThumbnail>
+                    </IonCard>
+                    <IonCard className={styles.chantTimeCards}>
+                        <IonThumbnail className={styles.chantTimeIcon}><img src={SunNoonIcon} alt="" /></IonThumbnail>
+                        <div className={styles.chantTimeTextContainer}>
+                            <span className={styles.chantTimeName}>Shiva Chant</span>
+                            <span className={styles.chantTimeDuration}>3:00 PM - 3:30 PM</span>
+                        </div>
+                        <IonThumbnail className={styles.chantCompletion} onClick={handleCompletionIconClick}><img src={icons[currentIndex]} alt="play/pause/complete" /></IonThumbnail>
+                    </IonCard>
+                    <IonCard className={styles.chantTimeCards}>
+                        <IonThumbnail className={styles.chantTimeIcon}><img src={SunDownIcon} alt="" /></IonThumbnail>
+                        <div className={styles.chantTimeTextContainer}>
+                            <span className={styles.chantTimeName}>Krishna Kirtan</span>
+                            <span className={styles.chantTimeDuration}>6:00 PM - 6:30 PM</span>
+                        </div>
+                        <IonThumbnail className={styles.chantCompletion} onClick={handleCompletionIconClick}><img src={icons[currentIndex]} alt="play/pause/complete" /></IonThumbnail>
+                    </IonCard>
+                </div>
                 <div className={styles.topUnderlay}></div>
                 <div className={styles.bottomUnderlay}></div>
             </IonContent>

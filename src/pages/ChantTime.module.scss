@@ -34,8 +34,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin: 50px 0px;
 
     .chantTimeHeaderGreeting {
         font-family: 'charterbold', 'Times New Roman', sans-serif;
@@ -107,41 +106,50 @@
     }
 }
 
-.chantTimeCards {
-    z-index: 2;
-    width: 300px;
-    height: 70px;
-    top: 355px;
-    margin-left: 60px;
-    margin-right: 20px;
-    border-radius: 20px;
-    box-shadow: none;
+.chantTimeCardsContainer {
+    width: 100vw;
+    position: absolute;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    background-color: #FFFFFF;
+    justify-content: space-evenly;
+    z-index: 2;
 
-    .chantTimeIcon {
-        width: 35px;
-        height: 35px;
-        margin-left: 15px;
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
-
-    .chantTimeTextContainer {
+    .chantTimeCards {
+        width: 300px;
+        height: 70px;
+        top: 355px;
+        border-radius: 20px;
+        box-shadow: none;
         display: flex;
-        flex-direction: column;
-    }
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #FFFFFF;
+        padding: 0;
+        margin: 10px auto;
 
-    .chantCompletion {
-        height: 20px;
-        width: 20px;
-        margin-right: 20px;
-    }
+        .chantTimeIcon {
+            width: 35px;
+            height: 35px;
+            margin-left: 15px;
 
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .chantTimeTextContainer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chantCompletion {
+            height: 20px;
+            width: 20px;
+            margin-right: 20px;
+        }
+
+    }
 }
