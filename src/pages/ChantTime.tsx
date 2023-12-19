@@ -82,24 +82,38 @@ export const ChantTime = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.chantTimeCardsContainer}>
-                    {chantData.map((chant, index) => (
-                        <IonCard key={index} className={styles.chantTimeCards}>
-                            <IonThumbnail className={styles.chantTimeIcon}>
-                                <img src={chant.icon} alt="" />
-                            </IonThumbnail>
-                            <div className={styles.chantTimeTextContainer}>
-                                <span className={styles.chantTimeName}>{chant.name}</span>
-                                <span className={styles.chantTimeDuration}>{chant.duration}</span>
+                <div className={styles.chantTimeMainArea}>
+                    <div className={styles.progressCirclesContainer}>
+                        {...completionIcons.map((icon, index) => (
+                            <div key={index} className={styles.radioButton}>
+                                <div
+                                    className={styles.outerCircle}
+                                    onClick={() => handleCompletionIconClick(index)}
+                                >
+                                    {icon === CheckIcon && <div className={styles.innerCircle} />}
+                                </div>
                             </div>
-                            <IonThumbnail
-                                className={styles.chantCompletion}
-                                onClick={() => handleCompletionIconClick(index)}
-                            >
-                                <img src={completionIcons[index]} alt="play/pause/complete" />
-                            </IonThumbnail>
-                        </IonCard>
-                    ))}
+                        ))}
+                    </div>
+                    <div className={styles.chantTimeCardsContainer}>
+                        {chantData.map((chant, index) => (
+                            <IonCard key={index} className={styles.chantTimeCards}>
+                                <IonThumbnail className={styles.chantTimeIcon}>
+                                    <img src={chant.icon} alt="" />
+                                </IonThumbnail>
+                                <div className={styles.chantTimeTextContainer}>
+                                    <span className={styles.chantTimeName}>{chant.name}</span>
+                                    <span className={styles.chantTimeDuration}>{chant.duration}</span>
+                                </div>
+                                <IonThumbnail
+                                    className={styles.chantCompletion}
+                                    onClick={() => handleCompletionIconClick(index)}
+                                >
+                                    <img src={completionIcons[index]} alt="play/pause/complete" />
+                                </IonThumbnail>
+                            </IonCard>
+                        ))}
+                    </div>
                 </div>
                 <div className={styles.topUnderlay}></div>
                 <div className={styles.bottomUnderlay}></div>
