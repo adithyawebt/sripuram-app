@@ -15,14 +15,30 @@ import PlayIcon from '../assets/icons/play-outlined-alt.svg'
 import PauseIcon from '../assets/icons/play-pause.svg'
 import SunSetIcon from '../assets/icons/sunset.svg'
 
+interface ChantData {
+    icon: string;
+    name: string;
+    duration: string;
+}
+
+const chantData: ChantData[] = [
+    { icon: SunDownIcon, name: 'Manonmani Devi', duration: '6:00 AM - 6:30 AM' },
+    { icon: SunDownIcon, name: 'Ganesha Mantra', duration: '10 AM - 10:30 AM' },
+    { icon: SunNoonIcon, name: 'Lakshmi Mantra', duration: '12:00 PM - 12:30 PM' },
+    { icon: SunNoonIcon, name: 'Shiva Chant', duration: '3:00 PM - 3:30 PM' },
+    { icon: SunDownIcon, name: 'Krishna Kirtan', duration: '6:00 PM - 6:30 PM' },
+];
+
+
 export const ChantTime = () => {
     const icons = [PlayIcon, PauseIcon, CheckIcon];
     const history = useHistory();
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [completionIcons, setCompletionIcons] = useState<Array<string>>(Array(chantData.length).fill(icons[0]));
 
-    const handleCompletionIconClick = () => {
-        const newIndex = (currentIndex + 1) % icons.length;
-        setCurrentIndex(newIndex);
+    const handleCompletionIconClick = (index: number) => {
+        const newIcons = [...completionIcons];
+        newIcons[index] = icons[(icons.indexOf(completionIcons[index]) + 1) % icons.length];
+        setCompletionIcons(newIcons);
     };
 
     const handleBackIconClick = () => {
@@ -67,50 +83,27 @@ export const ChantTime = () => {
                     </div>
                 </div>
                 <div className={styles.chantTimeCardsContainer}>
-                    <IonCard className={styles.chantTimeCards}>
-                        <IonThumbnail className={styles.chantTimeIcon}><img src={SunDownIcon} alt="" /></IonThumbnail>
-                        <div className={styles.chantTimeTextContainer}>
-                            <span className={styles.chantTimeName}>Manonmani Devi</span>
-                            <span className={styles.chantTimeDuration}>6:00 AM - 6:30 AM</span>
-                        </div>
-                        <IonThumbnail className={styles.chantCompletion} onClick={handleCompletionIconClick}><img src={icons[currentIndex]} alt="play/pause/complete" /></IonThumbnail>
-                    </IonCard>
-                    <IonCard className={styles.chantTimeCards}>
-                        <IonThumbnail className={styles.chantTimeIcon}><img src={SunDownIcon} alt="" /></IonThumbnail>
-                        <div className={styles.chantTimeTextContainer}>
-                            <span className={styles.chantTimeName}>Ganesha Mantra</span>
-                            <span className={styles.chantTimeDuration}>10 AM - 10:30 AM</span>
-                        </div>
-                        <IonThumbnail className={styles.chantCompletion} onClick={handleCompletionIconClick}><img src={icons[currentIndex]} alt="play/pause/complete" /></IonThumbnail>
-                    </IonCard>
-                    <IonCard className={styles.chantTimeCards}>
-                        <IonThumbnail className={styles.chantTimeIcon}><img src={SunNoonIcon} alt="" /></IonThumbnail>
-                        <div className={styles.chantTimeTextContainer}>
-                            <span className={styles.chantTimeName}>Lakshmi Mantra</span>
-                            <span className={styles.chantTimeDuration}>12:00 PM - 12:30 PM</span>
-                        </div>
-                        <IonThumbnail className={styles.chantCompletion} onClick={handleCompletionIconClick}><img src={icons[currentIndex]} alt="play/pause/complete" /></IonThumbnail>
-                    </IonCard>
-                    <IonCard className={styles.chantTimeCards}>
-                        <IonThumbnail className={styles.chantTimeIcon}><img src={SunNoonIcon} alt="" /></IonThumbnail>
-                        <div className={styles.chantTimeTextContainer}>
-                            <span className={styles.chantTimeName}>Shiva Chant</span>
-                            <span className={styles.chantTimeDuration}>3:00 PM - 3:30 PM</span>
-                        </div>
-                        <IonThumbnail className={styles.chantCompletion} onClick={handleCompletionIconClick}><img src={icons[currentIndex]} alt="play/pause/complete" /></IonThumbnail>
-                    </IonCard>
-                    <IonCard className={styles.chantTimeCards}>
-                        <IonThumbnail className={styles.chantTimeIcon}><img src={SunDownIcon} alt="" /></IonThumbnail>
-                        <div className={styles.chantTimeTextContainer}>
-                            <span className={styles.chantTimeName}>Krishna Kirtan</span>
-                            <span className={styles.chantTimeDuration}>6:00 PM - 6:30 PM</span>
-                        </div>
-                        <IonThumbnail className={styles.chantCompletion} onClick={handleCompletionIconClick}><img src={icons[currentIndex]} alt="play/pause/complete" /></IonThumbnail>
-                    </IonCard>
+                    {chantData.map((chant, index) => (
+                        <IonCard key={index} className={styles.chantTimeCards}>
+                            <IonThumbnail className={styles.chantTimeIcon}>
+                                <img src={chant.icon} alt="" />
+                            </IonThumbnail>
+                            <div className={styles.chantTimeTextContainer}>
+                                <span className={styles.chantTimeName}>{chant.name}</span>
+                                <span className={styles.chantTimeDuration}>{chant.duration}</span>
+                            </div>
+                            <IonThumbnail
+                                className={styles.chantCompletion}
+                                onClick={() => handleCompletionIconClick(index)}
+                            >
+                                <img src={completionIcons[index]} alt="play/pause/complete" />
+                            </IonThumbnail>
+                        </IonCard>
+                    ))}
                 </div>
                 <div className={styles.topUnderlay}></div>
                 <div className={styles.bottomUnderlay}></div>
             </IonContent>
         </IonPage>
-    )
+    );
 }

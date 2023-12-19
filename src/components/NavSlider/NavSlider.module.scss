@@ -7,7 +7,8 @@
     flex-direction: row;
 
     &::-webkit-scrollbar {
-        width: 0.5rem; // Adjust the width as needed
+        background-color: transparent;
+        // width: 0.5rem; // Adjust the width as needed
     }
 
     &::-webkit-scrollbar-thumb {
@@ -15,7 +16,8 @@
     }
 
     &::-moz-scrollbar {
-        width: 0.5rem;
+        background-color: transparent;
+        // width: 0.5rem;
     }
 
     &::-moz-scrollbar-thumb {
