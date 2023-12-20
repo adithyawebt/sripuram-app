@@ -24,6 +24,17 @@
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        height: 70px;
+        width: 30px;
+        background-color: #FBF5E4;
+        border-radius: 70px;
+    }
 }
 
 .chantTimeHeader {
@@ -118,7 +129,7 @@
 }
 
 .progressCirclesContainer {
-    width: 20vw;
+    width: 10vw;
     position: relative;
     height: 100%;
     display: flex;
@@ -128,13 +139,34 @@
     align-content: space-between;
     justify-content: center;
 
+    &:last-child {
+        display: none;
+    }
+
     .radioButton {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 33px auto;
+        // margin: 33px auto;
         pointer-events: none;
+        display: flex;
+        flex-direction: column;
+
+        &:first-child {
+            margin-top: 15px;
+        }
+    }
+
+    .progressSlashLine {
+        height: 60px;
+        width: 1px;
+        border: 1px dotted #8B7752;
+        margin: 5px 0;
+    }
+
+    .lastProgressLine {
+        display: none;
     }
 
     .outerCircle {
@@ -164,7 +196,6 @@
 .chantTimeCardsContainer {
     width: 80vw;
     position: relative;
-    // top: 355px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,6 +229,20 @@
         .chantTimeTextContainer {
             display: flex;
             flex-direction: column;
+            text-align: left;
+            width: 60%;
+        }
+
+
+        .chantTimeName {
+            font-family: 'charterbold', 'Times New Roman', sans-serif;
+            color: #5D422C;
+            font-size: 16px;
+        }
+
+        .chantTimeDuration {
+            font-size: 12px;
+            color: #906847;
         }
 
         .chantCompletion {

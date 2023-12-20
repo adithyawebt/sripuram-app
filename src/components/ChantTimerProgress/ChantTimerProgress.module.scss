@@ -3,21 +3,26 @@
 .progressContainer {
     position: absolute;
     z-index: 2;
+    height: 180px;
+    width: 100%;
+    top: 100px;
 }
 
 .progressTimerWrapper {
     position: absolute;
-    top: 155px;
+    top: 50px;
     width: 100vw;
     overflow: hidden;
 
     .progressTimer {
         position: relative;
+        overflow: hidden;
         width: 250px;
         height: 125px;
-        border-radius: 275px 275px 15px 15px;
+        border-radius: 250px 250px 30px 30px;
         margin: 0 auto;
         background: #FBF5E4;
+        // border:30px solid #FBF5E4;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -27,13 +32,16 @@
         &::after {
             content: '';
             position: absolute;
-            bottom: -20px; /* Adjust this value for the desired dimple depth */
+            bottom: 0px; /* Adjust this value for the desired dimple depth */
             left: 50%;
             transform: translateX(-50%);
             width: 40px; /* Adjust this value for the desired dimple width */
             height: 20px; /* Adjust this value for the desired dimple height */
-            background: #FBF5E4; /* Same background color as .progressTimer */
+            // background: #FBF5E4; /* Same background color as .progressTimer */
+            background-color: white;
+            opacity: 1;
             border-radius: 50%;
+            mix-blend-mode: color-dodge;
         }
         
         .progressChantName {

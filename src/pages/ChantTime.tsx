@@ -8,11 +8,11 @@ import styles from './ChantTime.module.scss'
 import BellIcon from '../assets/icons/bell.svg'
 import BackIcon from '../assets/icons/arrow-back-outline.svg'
 import SunDownIcon from '../assets/icons/sunrise-1.svg'
-import SunRiseIcon from '../assets/icons/sunrise.svg'
 import SunNoonIcon from '../assets/icons/sun.svg'
 import CheckIcon from '../assets/icons/check-circle-fill.svg'
-import PlayIcon from '../assets/icons/play-outlined-alt.svg'
+import PlayIcon from '../assets/icons/play-filled-alt.svg'
 import PauseIcon from '../assets/icons/play-pause.svg'
+import SunRiseIcon from '../assets/icons/sunrise.svg'
 import SunSetIcon from '../assets/icons/sunset.svg'
 
 interface ChantData {
@@ -27,6 +27,7 @@ const chantData: ChantData[] = [
     { icon: SunNoonIcon, name: 'Lakshmi Mantra', duration: '12:00 PM - 12:30 PM' },
     { icon: SunNoonIcon, name: 'Shiva Chant', duration: '3:00 PM - 3:30 PM' },
     { icon: SunDownIcon, name: 'Krishna Kirtan', duration: '6:00 PM - 6:30 PM' },
+    { icon: SunDownIcon, name: 'Ram Sloka', duration: '6:00 PM - 6:30 PM' },
 ];
 
 
@@ -92,6 +93,10 @@ export const ChantTime = () => {
                                 >
                                     {icon === CheckIcon && <div className={styles.innerCircle} />}
                                 </div>
+                                <div
+                                    className={`${styles.progressSlashLine} ${index === completionIcons.length - 1 ? styles.lastProgressLine : ''
+                                        }`}
+                                ></div>
                             </div>
                         ))}
                     </div>
