@@ -2,6 +2,7 @@
 
 .ion-content {
     position: relative;
+    --ion-background-color: #FBF5E4;
 }
 
 .topNavUnderlay {
@@ -13,16 +14,6 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     z-index: 1;
-}
-
-.bottomNavUnderlay {
-    position: absolute;
-    top: 430px;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 430px);
-    bottom: 0;
-    background-color: #FBF5E4;
 }
 
 .navPageHeader {
