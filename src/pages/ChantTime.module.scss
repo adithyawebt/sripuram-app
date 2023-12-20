@@ -37,45 +37,6 @@
     }
 }
 
-.chantTimeHeader {
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 50px 0px;
-
-    .chantTimeHeaderGreeting {
-        font-family: 'charterbold', 'Times New Roman', sans-serif;
-        font-size: 22px;
-        color: #FBF5E4;
-    }
-
-    .chantBackIcon {
-        background-color: #FBF5E4;
-        width: 40px;
-        height: 40px;
-        border-radius: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 15px;
-    }
-
-    .chantHeaderIcon {
-        background-color: #FBF5E4;
-        width: 40px;
-        height: 40px;
-        border-radius: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 25px;
-    }
-}
-
 .sunTiming {
     position: absolute;
     top: 295px;
@@ -119,7 +80,7 @@
 
 .chantTimeMainArea {
     width: 100vw;
-    position: relative;
+    position: absolute;
     top: 355px;
     display: flex;
     flex-direction: row;
@@ -148,7 +109,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        // margin: 33px auto;
         pointer-events: none;
         display: flex;
         flex-direction: column;
@@ -219,7 +179,8 @@
             width: 35px;
             height: 35px;
             margin-left: 15px;
-
+            display: flex;
+            align-items: center;
             img {
                 width: 100%;
                 height: auto;
@@ -246,8 +207,8 @@
         }
 
         .chantCompletion {
-            height: 20px;
-            width: 20px;
+            height: 15px;
+            width: 15px;
             margin-right: 20px;
         }
 

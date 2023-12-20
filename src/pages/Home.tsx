@@ -10,13 +10,12 @@ const Home: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen>
-        <Header />
+        <Header greeting="Om Namo Narayani"/>
         <NavSlider />
         <ChantCard />
         <TrendingSliderContainer />
         <ExploreCard />
         <div className={styles.topUnderlay}></div>
-        <div className={styles.bottomUnderlay}></div>
       </IonContent>
     </IonPage>
   );

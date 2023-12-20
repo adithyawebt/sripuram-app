@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom';
 import { IonCard, IonContent, IonIcon, IonPage, IonThumbnail } from '@ionic/react'
+import { Header } from '../components/Header/Header';
 import { ChantTimerProgress } from '../components/ChantTimerProgress/ChantTimerProgress';
 
 import styles from './ChantTime.module.scss'
 
-import BellIcon from '../assets/icons/bell.svg'
-import BackIcon from '../assets/icons/arrow-back-outline.svg'
 import SunDownIcon from '../assets/icons/sunrise-1.svg'
 import SunNoonIcon from '../assets/icons/sun.svg'
 import CheckIcon from '../assets/icons/check-circle-fill.svg'
@@ -42,22 +41,10 @@ export const ChantTime = () => {
         setCompletionIcons(newIcons);
     };
 
-    const handleBackIconClick = () => {
-        history.push('/');
-    };
-
     return (
         <IonPage>
             <IonContent fullscreen>
-                <div className={styles.chantTimeHeader}>
-                    <div className={styles.chantBackIcon} onClick={handleBackIconClick}>
-                        <IonIcon icon={BackIcon}></IonIcon>
-                    </div>
-                    <span className={styles.chantTimeHeaderGreeting}>Chant Time</span>
-                    <div className={styles.chantHeaderIcon}>
-                        <IonIcon icon={BellIcon}></IonIcon>
-                    </div>
-                </div>
+                <Header greeting="Chant Time" />
                 <ChantTimerProgress />
                 <div className={styles.sunTiming}>
                     <div className={styles.sunTime}>

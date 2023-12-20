@@ -8,14 +8,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 50px 20px;
     z-index: 2;
 }
 
 .greeting {
-    width: 80%;
     font-size: 22px;
-    font-family: 'charterbold','Times New Roman', Times, serif;
+    font-family: 'charterbold', 'Times New Roman', Times, serif;
     color: #FBF5E4;
 }
 
@@ -28,4 +27,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.backIcon {
+    background-color: #FBF5E4;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
 }

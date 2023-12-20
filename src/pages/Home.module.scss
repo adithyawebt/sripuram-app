@@ -1,5 +1,6 @@
-.ion-content {
+ion-content {
   position: relative;
+  --ion-background-color: #FBF5E4;
 }
 
 .topUnderlay {
@@ -12,14 +13,4 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   z-index: 1;
-}
-
-.bottomUnderlay {
-  position: absolute;
-  top: 430px;
-  left: 0;
-  width: 100%;
-  height: calc(100vh - 240px);
-  bottom: 0;
-  background-color: #FBF5E4;
 }
