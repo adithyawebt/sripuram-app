@@ -21,12 +21,17 @@ export const Header = (props: HeaderProps) => {
         history.push('/');
     };
 
+    const notifCount = 29;
+
     return (
         <div className={styles.headerContainer}>
             {isHomePage ? (
                 <>
                     <span className={styles.greeting}>{props.greeting}</span>
                     <div className={styles.iconContainer}>
+                        <div className={styles.notificationBadge}>
+                            <span className={styles.notificationCount}>{notifCount}</span>
+                        </div>
                         <IonIcon icon={BellIcon}></IonIcon>
                     </div>
                 </>
@@ -37,6 +42,9 @@ export const Header = (props: HeaderProps) => {
                     </div>
                     <span className={styles.greeting}>{props.greeting}</span>
                     <div className={styles.iconContainer}>
+                        <div className={styles.notificationBadge}>
+                            <span className={styles.notificationCount}>{notifCount}</span>
+                        </div>
                         <IonIcon icon={BellIcon}></IonIcon>
                     </div>
                 </>

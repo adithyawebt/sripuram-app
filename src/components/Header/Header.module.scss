@@ -27,6 +27,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .notificationBadge {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: #79AF2E;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .notificationCount {
+            font-family: 'charterbold', 'Times New Roman', sans-serif;
+            font-size: 8px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+    }
 }
 
 .backIcon {
