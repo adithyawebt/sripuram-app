@@ -1,11 +1,11 @@
-import { IonPage, IonContent, IonLabel } from '@ionic/react';
-import { useState, useEffect } from 'react';
-import styles from './ChantTimerProgress.module.scss'
+import { useState, useEffect, CSSProperties } from 'react';
+import styles from './ChantTimerProgress.module.scss';
 
 export const ChantTimerProgress = () => {
     const [timer, setTimer] = useState(0);
     const [isRunning, setIsRunning] = useState(false);
     const [lastTap, setLastTap] = useState(0);
+    const [rotateDegree, setRotateDegree] = useState(0);
 
     const formatTime = (seconds: number) => {
         const minutes = Math.floor(seconds / 60);
@@ -57,19 +57,36 @@ export const ChantTimerProgress = () => {
         return () => clearInterval(interval);
     }, [isRunning]);
 
-    return (
+    useEffect(() => {
+        const newRotateDegree = (timer / 300) * 180; // Adjust as needed
+        setRotateDegree(newRotateDegree);
+    }, [timer]);
 
+    const progressBarStyle: CSSProperties = {
+        transform: `rotate(calc( 180deg * ${rotateDegree}/ 100))`
+    }
+
+    return (
         <div className={styles.progressContainer}>
+            {/* <div className={styles.progressBarWrapper}>
+                <div className={styles.progressCircle}>
+                    <div
+                        id="bar"
+                        className={styles.progressFill}
+                        style={progressBarStyle}
+                    ></div>
+                </div>
+            </div> */}
             <div className={styles.progressTimerWrapper}>
-                <IonLabel
+                <div
                     className={styles.progressTimer}
                     onClick={handleTap}
                     onDoubleClick={handleDoubleTap}
                 >
                     <span className={styles.progressChantName}>Chant Name</span>
                     <span className={styles.progressChantTime}>{formatTime(timer)}</span>
-                </IonLabel>
+                </div>
             </div>
         </div>
     );
-}
+};

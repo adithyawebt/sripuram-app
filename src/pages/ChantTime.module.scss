@@ -26,14 +26,15 @@
     z-index: 1;
 
     &::before {
-        content: '';
         position: absolute;
-        top: -15px;
+        content: "";
+        width: 100px;
+        height: 35px;
+        background: url('../assets/icons/shape\ 2.svg') center/cover;
+        top: -17px; 
         left: 50%;
-        height: 70px;
-        width: 30px;
-        background-color: #FBF5E4;
-        border-radius: 70px;
+        transform: translateX(-50%);
+        z-index: 3;
     }
 }
 
