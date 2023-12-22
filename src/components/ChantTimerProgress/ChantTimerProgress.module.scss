@@ -8,52 +8,43 @@ $rotateDegree: 180;
     height: 180px;
     width: 100%;
     top: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-// .progressBarWrapper {
-//     overflow: hidden;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
+.progressBarWrapper {
+    position: relative;
+    margin: 4px;
+    float: left;
+    text-align: center;
 
-//     .progressCircle {
-//         position: relative;
-//         width: 300px;
-//         height: 170px;
-//         background-color: transparent;
-//         border-top-left-radius: 200px;
-//         border-top-right-radius: 200px;
-//         border: 10px solid black;
-//         border-bottom: 0;
-//         transition: transform 1s ease;
-//         transform-origin: bottom;
-//     }
+    .progressCircle {
+        position: relative;
+        overflow: hidden;
+        width: 350px;
+        height: 170px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-//     .progressFill {
-//         content: "";
-//         width: 100%;
-//         height: 100%;
-//         background-color: transparent;
-//         border-top-left-radius: 200px;
-//         border-top-right-radius: 200px;
-//         border: 10px solid white;
-//         border-bottom: 0;
-//         transition: transform 1s ease;
-//         transform-origin: bottom;
-//         width: 300px;
-//         height: 170px;
-//         background-color: transparent;
-//         border-top-left-radius: 200px;
-//         border-top-right-radius: 200px;
-//         border: 10px solid #C78C3B;
-//         border-bottom: 0;
-//         transition: transform 1s ease;
-//         transform-origin: bottom;
-//         transform: rotate(calc(180deg + #{$rotateDegree}deg));
+    .progressFill {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        border: 15px solid #C78C3B;
+        border-top-color: black;
+        border-right-color: black;
+    }
 
-//     }
-
-// }
+}
 
 .progressTimerWrapper {
     position: absolute;

@@ -5,7 +5,7 @@ export const ChantTimerProgress = () => {
     const [timer, setTimer] = useState(0);
     const [isRunning, setIsRunning] = useState(false);
     const [lastTap, setLastTap] = useState(0);
-    const [rotateDegree, setRotateDegree] = useState(0);
+    const [rotateDegree, setRotateDegree] = useState<number>(0);
 
     const formatTime = (seconds: number) => {
         const minutes = Math.floor(seconds / 60);
@@ -58,7 +58,7 @@ export const ChantTimerProgress = () => {
     }, [isRunning]);
 
     useEffect(() => {
-        const newRotateDegree = (timer / 300) * 180; // Adjust as needed
+        const newRotateDegree = (timer / 300) * 180 - 24; // Adjust as needed
         setRotateDegree(newRotateDegree);
     }, [timer]);
 
@@ -68,15 +68,11 @@ export const ChantTimerProgress = () => {
 
     return (
         <div className={styles.progressContainer}>
-            {/* <div className={styles.progressBarWrapper}>
+            <div className={styles.progressBarWrapper}>
                 <div className={styles.progressCircle}>
-                    <div
-                        id="bar"
-                        className={styles.progressFill}
-                        style={progressBarStyle}
-                    ></div>
+                    <div className={styles.progressFill} style={progressBarStyle} ></div>
                 </div>
-            </div> */}
+            </div>
             <div className={styles.progressTimerWrapper}>
                 <div
                     className={styles.progressTimer}

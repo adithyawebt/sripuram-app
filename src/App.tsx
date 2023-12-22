@@ -35,7 +35,7 @@ const App: React.FC = () => (
 
   <IonApp>
     <IonReactRouter>
-      <IonRouterOutlet placeholder={undefined}>
+      <IonRouterOutlet>
         <Route exact path="/">
           <Home />
         </Route>
