@@ -1,5 +1,7 @@
 @import '../../assets/fonts/gill-sans/stylesheet.css';
 
+@import '../../assets/styles/colors.scss';
+
 .navSliderContainer {
     position: relative;
     z-index: 2;
@@ -53,7 +55,7 @@
         font-weight: 600;
         letter-spacing: 1px;
         font-size: 14px;
-        color: #FBF5E4;
+        color: $primary-background-color;
         margin-top: 10px;
     }
 }

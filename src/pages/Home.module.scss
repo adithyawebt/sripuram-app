@@ -1,6 +1,8 @@
+@import '../assets/styles/colors.scss';
+
 ion-content {
   position: relative;
-  --ion-background-color: #FBF5E4;
+  --ion-background-color: $primary-background-color;
 }
 
 .topUnderlay {
@@ -9,7 +11,7 @@ ion-content {
   left: 0;
   width: 100%;
   height: 450px;
-  background: #571207 url('../assets/icons/pattern.svg') center/cover;
+  background: $overlay-dark url('../assets/icons/pattern.svg') center/cover;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   z-index: 1;

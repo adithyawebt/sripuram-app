@@ -1,8 +1,10 @@
+@import '../../assets/styles/colors.scss';
+
 @import '../../assets/fonts/charter/webfonts/stylesheet.css';
 
 .ion-content {
     position: relative;
-    --ion-background-color: #FBF5E4;
+    --ion-background-color: $primary-background-color;
 }
 
 .topNavUnderlay {
@@ -24,7 +26,7 @@
     text-align: center;
     font-family: 'charterbold', 'Times New Roman', sans-serif;
     font-size: 26px;
-    color: #5D422C;
+    color: $dark-text;
 }
 
 .navPageText {
@@ -35,7 +37,7 @@
     font-size: 16px;
     text-align: center;
     line-height: 30px;
-    color: #922616;
+    color: $accent-dark;
 }
 
 .templeBG {

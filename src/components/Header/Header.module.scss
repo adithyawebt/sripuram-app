@@ -1,3 +1,5 @@
+@import '../../assets/styles/colors.scss';
+
 @import '../../assets/fonts/charter/webfonts/stylesheet.css';
 
 .headerContainer {
@@ -15,12 +17,12 @@
 .greeting {
     font-size: 22px;
     font-family: 'charterbold', 'Times New Roman', Times, serif;
-    color: #FBF5E4;
+    color: $primary-background-color;
 }
 
 .iconContainer {
     position: relative;
-    background-color: #FBF5E4;
+    background-color: $primary-background-color;
     height: 40px;
     width: 40px;
     border-radius: 100%;
@@ -35,7 +37,7 @@
         height: 15px;
         width: 15px;
         border-radius: 50%;
-        background-color: #79AF2E;
+        background-color: $notification-badge-color;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -43,14 +45,14 @@
         .notificationCount {
             font-family: 'charterbold', 'Times New Roman', sans-serif;
             font-size: 8px;
-            color: #FFFFFF;
+            color: $light-text;
             text-align: center;
         }
     }
 }
 
 .backIcon {
-    background-color: #FBF5E4;
+    background-color: $primary-background-color;
     width: 40px;
     height: 40px;
     border-radius: 100%;

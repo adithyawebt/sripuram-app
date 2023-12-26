@@ -1,6 +1,8 @@
 @import '../../assets//fonts/charter/webfonts/stylesheet.css';
 @import '../../assets/fonts/gill-sans/stylesheet.css';
 
+@import '../../assets/styles/colors.scss';
+
 .exploreCardContainer {
     display: flex;
     align-items: center;
@@ -9,7 +11,7 @@
 }
 
 .exploreCard {
-    background-color: #571207;
+    background-color: $overlay-dark;
     max-width: 375px;
     height: 220px;
     border-radius: 20px;
@@ -31,13 +33,13 @@
 
 .exploreTitle {
     font-family: 'charterbold', 'Times New Roman', sans-serif;
-    color: #FBF5E4;
+    color: $primary-background-color;
     font-size: 23px;
     margin-top: 20px;
 }
 
 .exploreSubtitle {
-    color: #FBF5E4;
+    color: $primary-background-color;
     font-family: 'GillSansRegular', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -51,7 +53,7 @@
 .exploreButton {
     width: 100px;
     height: 30px;
-    background-color: #FBF5E4;
+    background-color: $primary-background-color;
     border-radius: 15px;
     margin-bottom: 25px;
     display: flex;
@@ -67,7 +69,7 @@
 
     .explorePlayText {
         font-family: 'charterbold', 'Times New Roman', sans-serif;
-        color: #6E1A0D;
+        color: $accent-darker;
         font-size: 12px;
         margin-right: 10px;
     }

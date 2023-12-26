@@ -1,3 +1,5 @@
+@import '../assets/styles/colors.scss';
+
 @import '../assets/fonts/charter/webfonts/stylesheet.css';
 @import '../assets/fonts/gill-sans/stylesheet.css';
 
@@ -11,7 +13,7 @@
     left: 0;
     width: 100%;
     height: 450px;
-    background: #571207 url('../assets/icons/pattern.svg') center/cover;
+    background: $overlay-dark url('../assets/icons/pattern.svg') center/cover;
 }
 
 .bottomUnderlay {
@@ -21,7 +23,7 @@
     width: 100%;
     height: calc(100vh - 340px);
     bottom: 0;
-    background-color: #FBF5E4;
+    background-color: $primary-background-color;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     z-index: 1;
@@ -58,7 +60,7 @@
         display: flex;
         flex-direction: column;
         margin: 0 8px;
-        color: #FBE7CC;
+        color: $secondary-background-color;
         
         .sunTimeText {
             font-family: 'GillSansRegular', 'Times New Roman',sans-serif;
@@ -149,7 +151,7 @@
         width: 13px;
         height: 13px;
         border-radius: 50%;
-        background-color: #922616;
+        background-color: $accent-dark;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -175,7 +177,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        background-color: #FFFFFF;
+        background-color: $light-text;
         padding: 0;
         margin: 10px auto;
 
@@ -201,7 +203,7 @@
 
         .chantTimeName {
             font-family: 'charterbold', 'Times New Roman', sans-serif;
-            color: #5D422C;
+            color: $dark-text;
             font-size: 16px;
         }
 

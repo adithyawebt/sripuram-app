@@ -1,3 +1,5 @@
+@import '../../assets/styles/colors.scss';
+
 @import '../../assets/fonts/charter/webfonts/stylesheet.css';
 @import '../../assets/fonts/gill-sans/stylesheet.css';
 
@@ -63,7 +65,7 @@ $rotateDegree: 180;
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: #5D422C;
+        color: $dark-text;
         padding: 32px 0px;
 
         .progressChantName {

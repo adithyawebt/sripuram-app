@@ -1,3 +1,5 @@
+@import '../../assets/styles/colors.scss';
+
 @import '../../assets//fonts/charter/webfonts/stylesheet.css';
 @import '../../assets/fonts/gill-sans/stylesheet.css';
 
@@ -9,7 +11,7 @@
 }
 
 .chantCard {
-    background-color: #FBE7CC;
+    background-color: $secondary-background-color;
     max-width: 375px;
     height: 220px;
     border-radius: 20px;
@@ -32,13 +34,13 @@
 
 .chantTitle {
     font-family: 'charterbold', 'Times New Roman', sans-serif;
-    color: #5D422C;
+    color: $dark-text;
     font-size: 23px;
     margin-top: 20px;
 }
 
 .chantSubtitle {
-    color: #5D422C;
+    color: $dark-text;
     font-family: 'GillSansRegular', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -59,7 +61,7 @@
     width: 160px;
     height: 30px;
     background-color: transparent;
-    border: 1px solid #922616;
+    border: 1px solid $accent-dark;
     border-radius: 16px;
     margin: 30px 0;
     padding: 0 10px;
@@ -81,7 +83,7 @@
 
     .chantPlayText {
         font-family: 'charterbold', 'Times New Roman', sans-serif;
-        color: #6E1A0D;
+        color: $accent-darker;
         font-size: 12px;
         margin-right: 5px;
     }
