@@ -1,3 +1,5 @@
+@import '../../assets/fonts/gill-sans-2-cufonfonts/stylesheet.css';
+
 .navSliderContainer {
     position: relative;
     z-index: 2;
@@ -8,16 +10,14 @@
 
     &::-webkit-scrollbar {
         background-color: transparent;
-        // width: 0.5rem; // Adjust the width as needed
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: transparent; // Make the thumb transparent
+        background-color: transparent;
     }
 
     &::-moz-scrollbar {
         background-color: transparent;
-        // width: 0.5rem;
     }
 
     &::-moz-scrollbar-thumb {
@@ -49,6 +49,9 @@
     }
 
     .navSlidePieceTitle {
+        font-family: 'GillSansRegular', sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
         font-size: 14px;
         color: #FBF5E4;
         margin-top: 10px;

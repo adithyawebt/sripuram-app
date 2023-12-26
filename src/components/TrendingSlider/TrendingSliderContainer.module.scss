@@ -1,3 +1,5 @@
+@import '../../assets/fonts/gill-sans-2-cufonfonts/stylesheet.css';
+
 .trendingSliderContainer {
     margin: 35px 0;
     position: relative;
@@ -24,18 +26,17 @@
     }
 
     .trendingSlider {
-        // margin: 0 15px;
         overflow-x: auto;
         display: flex;
         flex-direction: row;
         // scroll-snap-type: x mandatory;
 
         &::-webkit-scrollbar {
-            width: 0.5rem; // Adjust the width as needed
+            width: 0.5rem;
         }
 
         &::-webkit-scrollbar-thumb {
-            background-color: transparent; // Make the thumb transparent
+            background-color: transparent;
         }
 
         &::-moz-scrollbar {
@@ -69,6 +70,7 @@
                 position: absolute;
                 width: 30px;
                 height: 15px;
+                font-family: 'GillSansSemiBold', sans-serif;
                 font-size: 8px;
                 font-weight: 600;
                 top: 15px;

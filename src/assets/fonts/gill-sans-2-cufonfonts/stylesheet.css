@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'GillSansRegular';
+    src: url('./Gill\ Sans.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GillSansSemiBold';
+    src: url('./Gill\ Sans\ Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
