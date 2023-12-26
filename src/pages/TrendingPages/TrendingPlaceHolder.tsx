@@ -3,6 +3,7 @@ import { Header } from "../../components/Header/Header";
 
 import styles from './TrendingPlaceHolder.module.scss'
 
+import TempleBG from '../../assets/images/temple.jpg'
 
 export const TrendingPlaceHolder = () => {
     return (
@@ -13,7 +14,7 @@ export const TrendingPlaceHolder = () => {
                 <div className={styles.trendPageText}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, totam autem! Eum, magnam dolorum consequatur earum exercitationem pariatur optio nobis eaque aspernatur illo odio ipsa atque voluptatibus odit quas temporibus.
                 </div>
-                <div className={styles.topTrendUnderlay}></div>
+                <div className={styles.topTrendUnderlay}><img src={ TempleBG } alt="" /> </div>
                 <div className={styles.bottomTrendUnderlay}></div>
             </IonContent>
         </IonPage>

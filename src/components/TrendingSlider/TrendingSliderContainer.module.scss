@@ -1,5 +1,6 @@
 @import '../../assets/styles/colors.scss';
 
+@import '../../assets/fonts/fonts.scss';
 @import '../../assets/fonts/gill-sans/stylesheet.css';
 
 .trendingSliderContainer {
@@ -10,9 +11,11 @@
     .trendingText {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
         margin-bottom: 20px;
+        font-family: 'charterregular', 'Times New Roman', sans-serif;
+        font-weight: 600;
 
         .trendingHeader {
             color: $dark-text;
