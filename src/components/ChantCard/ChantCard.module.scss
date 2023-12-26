@@ -1,7 +1,8 @@
 @import '../../assets/styles/colors.scss';
 
-@import '../../assets//fonts/charter/webfonts/stylesheet.css';
-@import '../../assets/fonts/gill-sans/stylesheet.css';
+// @import '../../assets//fonts/charter/webfonts/stylesheet.css';
+// @import '../../assets/fonts/gill-sans/stylesheet.css';
+@import '../../assets/fonts/fonts.scss';
 
 .chantCardContainer {
     display: flex;
@@ -36,6 +37,7 @@
     font-family: 'charterbold', 'Times New Roman', sans-serif;
     color: $dark-text;
     font-size: 23px;
+    font-weight: 600;
     margin-top: 20px;
 }
 
@@ -84,7 +86,7 @@
     .chantPlayText {
         font-family: 'charterbold', 'Times New Roman', sans-serif;
         color: $accent-darker;
-        font-size: 12px;
+        font-size: 14px;
         margin-right: 5px;
     }
 }

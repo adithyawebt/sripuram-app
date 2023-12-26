@@ -1,7 +1,9 @@
-import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonIcon, IonThumbnail, IonImg } from '@ionic/react';
+import { IonCard, IonThumbnail } from '@ionic/react';
+
+import styles from './ExploreCard.module.scss';
+
 import ExploreImage from '../../assets/icons/Group 7.svg'
 import ExplorePlayIcon from '../../assets/icons/play-filled.svg'
-import styles from './ExploreCard.module.scss';
 
 export const ExploreCard = () => {
   return (

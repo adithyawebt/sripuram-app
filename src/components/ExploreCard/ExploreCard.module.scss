@@ -1,6 +1,3 @@
-@import '../../assets//fonts/charter/webfonts/stylesheet.css';
-@import '../../assets/fonts/gill-sans/stylesheet.css';
-
 @import '../../assets/styles/colors.scss';
 
 .exploreCardContainer {
@@ -22,6 +19,13 @@
     z-index: 2;
     padding: 0;
     margin: 0;
+
+    .exploreImage {
+        position: absolute;
+        height: 114px;
+        width: 166px;
+        right: 0;
+    }
 }
 
 .exploreText {
@@ -29,25 +33,26 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-}
 
-.exploreTitle {
-    font-family: 'charterbold', 'Times New Roman', sans-serif;
-    color: $primary-background-color;
-    font-size: 23px;
-    margin-top: 20px;
-}
+    .exploreTitle {
+        font-family: 'charterbold', 'Times New Roman', sans-serif;
+        color: $primary-background-color;
+        font-size: 23px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
 
-.exploreSubtitle {
-    color: $primary-background-color;
-    font-family: 'GillSansRegular', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    margin-right: 150px;
-    text-align: left;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    .exploreSubtitle {
+        color: $primary-background-color;
+        font-family: 'GillSansRegular', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-right: 150px;
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
 }
 
 .exploreButton {
@@ -60,24 +65,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
 
     .explorePlayicon {
         width: 18px;
         height: 18px;
-        margin-left: 7px;
     }
 
     .explorePlayText {
         font-family: 'charterbold', 'Times New Roman', sans-serif;
         color: $accent-darker;
         font-size: 12px;
-        margin-right: 10px;
     }
-}
-
-.exploreImage {
-    position: absolute;
-    height: 114px;
-    width: 166px;
-    right: 0;
 }

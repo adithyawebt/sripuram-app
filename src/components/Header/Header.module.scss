@@ -1,6 +1,8 @@
 @import '../../assets/styles/colors.scss';
 
-@import '../../assets/fonts/charter/webfonts/stylesheet.css';
+// @import '../../assets/fonts/charter/webfonts/stylesheet.css';
+
+@import '../../assets/fonts/fonts.scss';
 
 .headerContainer {
     position: relative;
@@ -15,9 +17,10 @@
 }
 
 .greeting {
-    font-size: 22px;
     font-family: 'charterbold', 'Times New Roman', Times, serif;
+    font-size: 22px;
     color: $primary-background-color;
+    font-weight: 600;
 }
 
 .iconContainer {

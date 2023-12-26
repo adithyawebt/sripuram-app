@@ -46,8 +46,8 @@ export const NavSlider = () => {
 
     return (
         <div className={styles.navSliderContainer}>
-            {navSliderData.map((data) => {
-                return <div className={styles.navSlidePiece} onClick={() => handleSlideClick(data.path)}>
+            {navSliderData.map((data, index) => {
+                return <div key={index} className={styles.navSlidePiece} onClick={() => handleSlideClick(data.path)}>
                     <IonThumbnail className={styles.navSlidePieceImage}><img src={data.image} alt=" nav slider image" /></IonThumbnail>
                     <div className={styles.navSlidePieceTitle}>{data.title}</div>
                 </div>

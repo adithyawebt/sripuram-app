@@ -39,8 +39,8 @@ export const TrendingSliderContainer = () => {
                 <span className={styles.trendingAll}>See All</span>
             </div>
             <div className={styles.trendingSlider}>
-                {sliderData.map((data) => {
-                    return <div className={styles.trendingCardHolder}>
+                {sliderData.map((data, index) => {
+                    return <div key={index} className={styles.trendingCardHolder}>
                         <IonCard className={styles.trendingSwipeCard} onClick={() => handleSlideClick(data.path)}>
                             <div className={styles.trendingCardBadge}>NEW</div>
                             <IonThumbnail className={styles.trendingImage}><img src={data.image} alt="" /></IonThumbnail>
