@@ -58,7 +58,7 @@ export const ChantTimerProgress = () => {
     }, [isRunning]);
 
     useEffect(() => {
-        const newRotateDegree = (timer / 300) * 180 - 24; // Adjust as needed
+        const newRotateDegree = (timer / 300) * 180 - 25; // Adjust as needed
         setRotateDegree(newRotateDegree);
     }, [timer]);
 

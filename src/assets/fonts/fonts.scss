@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'charterbold';
+    src: url('./charter/webfonts/charter_bold-webfont.eot');
+    src: url('./charter/webfonts/charter_bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./charter/webfonts/charter_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GillSansRegular';
+    src: url('./gill-sans/Gill\ Sans.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GillSansSemiBold';
+    src: url('./gill-sans/Gill\ Sans\ Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
