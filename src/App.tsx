@@ -4,8 +4,8 @@ import { IonReactRouter } from '@ionic/react-router';
 
 import './App.scss';
 
-import Home from './pages/Home';
-import { ChantTime } from './pages/ChantTime';
+import Home from './pages/Home/Home';
+import { ChantTime } from './pages/ChantTime/ChantTime';
 import { Bhajan } from './pages/NavSliderPages/Bhajan';
 import { Mantra } from './pages/NavSliderPages/Mantra';
 import { Meditation } from './pages/NavSliderPages/Meditation';

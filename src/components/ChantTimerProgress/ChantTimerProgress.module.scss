@@ -1,9 +1,9 @@
 @import '../../assets/styles/colors.scss';
 
-// @import '../../assets/fonts/charter/webfonts/stylesheet.css';
+@import '../../assets/fonts/charter/webfonts/stylesheet.css';
 // @import '../../assets/fonts/gill-sans/stylesheet.css';
 
-@import '../../assets/fonts/fonts.scss';
+// @import '../../assets/fonts/fonts.scss';
 
 $rotateDegree: 180;
 
@@ -77,7 +77,7 @@ $rotateDegree: 180;
         }
 
         .progressChantTime {
-            font-family: 'charterbold', 'Times New Roman', sans-serif;
+            font-family: 'charterbold';
             font-size: 37px;
         }
     }

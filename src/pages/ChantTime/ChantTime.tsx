@@ -1,19 +1,19 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom';
 import { IonCard, IonContent, IonPage, IonThumbnail } from '@ionic/react'
-import { Header } from '../components/Header/Header';
-import { ChantTimerProgress } from '../components/ChantTimerProgress/ChantTimerProgress';
+import { Header } from '../../components/Header/Header';
+import { ChantTimerProgress } from '../../components/ChantTimerProgress/ChantTimerProgress';
 
 import styles from './ChantTime.module.scss'
 
-import SunDownIcon from '../assets/icons/sunrise-1.svg'
-import SunNoonIcon from '../assets/icons/sun.svg'
-import SunDarkIcon from '../assets/icons/sun-dark.svg'
-import CheckIcon from '../assets/icons/check-circle-fill.svg'
-import PlayIcon from '../assets/icons/play-filled-alt.svg'
-import PauseIcon from '../assets/icons/play-pause.svg'
-import SunRiseIcon from '../assets/icons/sunrise.svg'
-import SunSetIcon from '../assets/icons/sunset.svg'
+import SunDownIcon from '../../assets/icons/sunrise-1.svg'
+import SunNoonIcon from '../../assets/icons/sun.svg'
+import SunDarkIcon from '../../assets/icons/sun-dark.svg'
+import CheckIcon from '../../assets/icons/check-circle-fill.svg'
+import PlayIcon from '../../assets/icons/play-filled-alt.svg'
+import PauseIcon from '../../assets/icons/play-pause.svg'
+import SunRiseIcon from '../../assets/icons/sunrise.svg'
+import SunSetIcon from '../../assets/icons/sunset.svg'
 
 interface ChantData {
     icon: string;

@@ -8,7 +8,6 @@ import TempleImage from '../../assets/images/temple-main.jpg';
 import MantraImage from '../../assets/images/mantra.jpg'
 import QuotesImage from '../../assets/images/quotes.jpg'
 import { IonThumbnail } from '@ionic/react';
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 export const NavSlider = () => {
     const history = useHistory();
