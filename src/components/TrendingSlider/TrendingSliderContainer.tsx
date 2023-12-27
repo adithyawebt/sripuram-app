@@ -4,10 +4,31 @@ import { useHistory } from 'react-router-dom';
 
 import styles from './TrendingSliderContainer.module.scss';
 
-import sliderData from '../../JSON/trendingSliderData.json'
+import TrendingImage1 from '../../assets/icons/chakras.svg'
+import TrendingImage2 from '../../assets/icons/meditation.svg'
+import TrendingImage3 from '../../assets/icons/Namaste.svg'
+// import sliderData from '../../JSON/trendingSliderData.json'
 
 export const TrendingSliderContainer = () => {
     const history = useHistory();
+
+    const sliderData = [
+        {
+            subtitle: "Lorem ipsum dolor sit",
+            image: TrendingImage1,
+            path: "/trending"
+        },
+        {
+            subtitle: "amet consectetur adipisicing elit",
+            image: TrendingImage2,
+            path: "/trending"
+        },
+        {
+            subtitle: "Ipsam deleniti magnam enim",
+            image: TrendingImage3,
+            path: "/trending"
+        }
+    ]
 
     const handleSlideClick = (path: string) => {
         history.push(path);

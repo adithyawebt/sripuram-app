@@ -5,13 +5,57 @@ import { ChantTimerProgress } from '../../components/ChantTimerProgress/ChantTim
 
 import styles from './ChantTime.module.scss'
 
-import chantData from '../../JSON/MantraTimeChant.json'
+// import chantData from '../../JSON/MantraTimeChant.json'
+
+import SunUpIcon from '../../assets/icons/sunrise-1.svg'
+import SunNoonIcon from '../../assets/icons/sun.svg'
+import SunDownIcon from '../../assets/icons/sun-dark.svg'
 
 import CheckIcon from '../../assets/icons/check-circle-fill.svg'
 import PlayIcon from '../../assets/icons/play-filled-alt.svg'
 import PauseIcon from '../../assets/icons/play-pause.svg'
 import SunRiseIcon from '../../assets/icons/sunrise.svg'
 import SunSetIcon from '../../assets/icons/sunset.svg'
+
+interface ChantData {
+    icon: string;
+    name: string;
+    duration: string;
+}
+
+const chantData: ChantData[] = [
+    {
+        icon: SunUpIcon,
+        name: "Manonmani Devi",
+        duration: "6: 00 AM - 6: 30 AM"
+    },
+    {
+        icon: SunUpIcon,
+        name: "Ganesha Mantra",
+        duration: "10 AM - 10: 30 AM"
+    },
+    {
+        icon: SunNoonIcon,
+        name: "Lakshmi Mantra",
+        duration: "12: 00 PM - 12: 30 PM"
+    },
+    {
+        icon: SunNoonIcon,
+        name: "Shiva Chant",
+        duration: "3: 00 PM - 3: 30 PM"
+    },
+    {
+        icon: SunDownIcon,
+        name: "Krishna Kirtan",
+        duration: "5: 00 PM - 5: 30 PM"
+    },
+    {
+        icon: SunDownIcon,
+        name: "Ram Sloka",
+        duration: "6: 00 PM - 6: 30 PM"
+    }
+];
+
 
 export const ChantTime = () => {
     const icons = [PlayIcon, PauseIcon, CheckIcon];
