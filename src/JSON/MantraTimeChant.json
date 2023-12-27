@@ -1,22 +1,32 @@
 [
     {
+        "icon": "src/assets/icons/sunrise-1.svg",
         "name": "Manonmani Devi",
-        "duration": "6:00 AM - 6:30 AM"
+        "duration": "6: 00 AM - 6: 30 AM"
     },
     {
+        "icon": "src/assets/icons/sunrise-1.svg",
         "name": "Ganesha Mantra",
-        "duration": "10:00 AM - 10:30 AM"
+        "duration": "10 AM - 10: 30 AM"
     },
     {
+        "icon": "src/assets/icons/sun.svg",
         "name": "Lakshmi Mantra",
-        "duration": "12:00 PM - 12:30 PM"
+        "duration": "12: 00 PM - 12: 30 PM"
     },
     {
+        "icon": "src/assets/icons/sun.svg",
         "name": "Shiva Chant",
-        "duration": "3:00 PM - 3:30 PM"
+        "duration": "3: 00 PM - 3: 30 PM"
     },
     {
+        "icon": "src/assets/icons/sunrise-1.svg",
         "name": "Krishna Kirtan",
-        "duration": "6:00 PM - 6:30 PM"
+        "duration": "5: 00 PM - 5: 30 PM"
+    },
+    {
+        "icon": "src//assets/icons/sun-dark.svg",
+        "name": "Ram Sloka",
+        "duration": "6: 00 PM - 6: 30 PM"
     }
 ]

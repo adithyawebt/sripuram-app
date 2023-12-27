@@ -1,0 +1,27 @@
+[
+    {
+        "image": "src/assets/images/temple-main.jpg",
+        "title": "Temple",
+        "path": "/temple"
+    },
+    {
+        "image": "src/assets/images/bhajan.jpg",
+        "title": "Bhajan",
+        "path": "/bhajan"
+    },
+    {
+        "image": "src/assets/images/meditation.jpg",
+        "title": "Meditation",
+        "path": "/meditation"
+    },
+    {
+        "image": "src/assets/images/mantra.jpg",
+        "title": "Mantra",
+        "path": "/mantra"
+    },
+    {
+        "image": "src/assets/images/quotes.jpg",
+        "title": "Quotes",
+        "path": "/quotes"
+    }
+]

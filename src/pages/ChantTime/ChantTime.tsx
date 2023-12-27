@@ -1,39 +1,20 @@
 import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom';
 import { IonCard, IonContent, IonPage, IonThumbnail } from '@ionic/react'
 import { Header } from '../../components/Header/Header';
 import { ChantTimerProgress } from '../../components/ChantTimerProgress/ChantTimerProgress';
 
 import styles from './ChantTime.module.scss'
 
-import SunDownIcon from '../../assets/icons/sunrise-1.svg'
-import SunNoonIcon from '../../assets/icons/sun.svg'
-import SunDarkIcon from '../../assets/icons/sun-dark.svg'
+import chantData from '../../JSON/MantraTimeChant.json'
+
 import CheckIcon from '../../assets/icons/check-circle-fill.svg'
 import PlayIcon from '../../assets/icons/play-filled-alt.svg'
 import PauseIcon from '../../assets/icons/play-pause.svg'
 import SunRiseIcon from '../../assets/icons/sunrise.svg'
 import SunSetIcon from '../../assets/icons/sunset.svg'
 
-interface ChantData {
-    icon: string;
-    name: string;
-    duration: string;
-}
-
-const chantData: ChantData[] = [
-    { icon: SunDownIcon, name: 'Manonmani Devi', duration: '6:00 AM - 6:30 AM' },
-    { icon: SunDownIcon, name: 'Ganesha Mantra', duration: '10 AM - 10:30 AM' },
-    { icon: SunNoonIcon, name: 'Lakshmi Mantra', duration: '12:00 PM - 12:30 PM' },
-    { icon: SunNoonIcon, name: 'Shiva Chant', duration: '3:00 PM - 3:30 PM' },
-    { icon: SunDownIcon, name: 'Krishna Kirtan', duration: '5:00 PM - 5:30 PM' },
-    { icon: SunDarkIcon, name: 'Ram Sloka', duration: '6:00 PM - 6:30 PM' },
-];
-
-
 export const ChantTime = () => {
     const icons = [PlayIcon, PauseIcon, CheckIcon];
-    const history = useHistory();
     const [completionIcons, setCompletionIcons] = useState<Array<string>>(Array(chantData.length).fill(icons[0]));
 
     const handleCompletionIconClick = (index: number) => {

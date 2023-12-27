@@ -1,0 +1,17 @@
+[
+    {
+        "subtitle": "Lorem ipsum dolor sit",
+        "image": "src/assets/icons/chakras.svg",
+        "path": "/trending"
+    },
+    {
+        "subtitle": "amet consectetur adipisicing elit",
+        "image": "src/assets/icons/meditation.svg",
+        "path": "/trending"
+    },
+    {
+        "subtitle": "Ipsam deleniti magnam enim",
+        "image": "src/assets/icons/Namaste.svg",
+        "path": "/trending"
+    }
+]
